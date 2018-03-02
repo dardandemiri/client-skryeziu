@@ -43,11 +43,11 @@
 
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Shërbimet
+              <a class="nav-link" href="#sherbimet">Shërbimet
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Ligjëruesi</a>
+              <a class="nav-link" href="#Ligjëruesi">Ligjëruesi</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Rekomandimet</a>
@@ -80,7 +80,7 @@
               <p>Kualiteti jonë garanton suksesin tuaj...</p>
 
               <div class="col mt-3">
-                <img alt="image" width="60px" class="arrow animated bounce infinite " src="img/arrow.png">
+                <img  alt="image" width="60px" class="arrow animated bounce infinite " src="img/arrow.png">
               </div>
 
             </div>
@@ -96,7 +96,7 @@
     <div class="container">
       <div class="row justify-content-center">
         <div data-aos="fade-down" data-aos-duration="850" class="col-12 text-center">
-          <h2>Shërbimet</h2>
+          <h2 id="sherbimet">Shërbimet</h2>
         </div>
       </div>
 
@@ -222,15 +222,53 @@
   </section>
 
 
-  <section class="fdb-block " style="background-image: url(img/bg_2.svg);">
-  	<div class="container-fluid">
-  		<div class="row text-center justify-content-center">
-        <div data-aos="fade-down" data-aos-duration="850" class="col-md-10 col-lg-7">
-          <h2>Ligjërues</h2>
-          <p>Këtu vjen ligjëruesi</p>
+  <section class="fdb-block " style="background-image: url(img/bg_0.svg); color: white;">
+
+    <div class="container">
+    	<div class="row justify-content-center">
+        <div data-aos="fade-down" data-aos-duration="850" class="col-12 text-center pb-5">
+          <h2 id="Ligjëruesi">Ligjërues</h2>
         </div>
       </div>
-  		
+      <div class="row text-lg-right align-items-center">
+        <div data-aos="fade-right" data-aos-duration="850" data-aos-delay="400" class="col-12 col-sm-6 col-lg-3">
+          <i class="fas fa-graduation-cap fa-4x"></i>
+          <h4>
+            <strong>Baschelor në Gjuhë Angleze</strong>
+          </h4>
+          <p>Përfundoi në afat rekord Baschelor në Universitetin e Prishtinës 2001-2004</p>
+
+          <i class="fas fa-graduation-cap fa-4x"></i>
+          <h4>
+            <strong>Master në Gjuhë Angleze</strong>
+          </h4>
+          <p>Përfundoi Master në Universitetin e Prishtinës 2004-2006</p>
+
+          
+        </div>
+
+        <div class="col-7 col-sm-4 col-lg-4 m-auto pt-5 pt-lg-0 order-lg-1">
+          <img data-aos="fade-up" data-aos-duration="850"  alt="image" class="img-fluid br-b-0" src="img/img_very_tall2.png">
+        </div>
+
+        <div data-aos="fade-left" data-aos-duration="850" data-aos-delay="400" class="col-12 col-sm-6 col-lg-3 text-left pt-3 pt-sm-0 order-lg-12">
+          <img alt="image" class="fdb-icon" src="img/gi_logo.svg">
+          <h4>
+            <strong>Goethe Institut - C2</strong>
+          </h4>
+          <p>I certifikuar nga Instituti botëror i gjuhës Gjermane Goethe me nivelin më të lartë C2.</p>
+
+          <i class="fas fa-briefcase fa-4x"></i>
+          <h4>
+            <strong>Përkthyes i Licensuar</strong>
+          </h4>
+          <p>I licensuar për të përkther dokumenta në mënyrë profesionale pa as një gabim.</p>
+
+          
+        </div>
+
+        
+      </div>  		
   	</div>
   </section>
 
@@ -423,15 +461,9 @@
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
         </div>
-
-
       </div>
     </div>
   </section>
-
-
-
-
 
 
   <!-- Pricing Area  -->
@@ -641,7 +673,7 @@
           <i style="color:red;" class="fas fa-heart"></i> by
           <a href="https://dardandemiri.github.io/">
             <strong>Dardan Demiri</strong>
-          </a> &copy;
+          </a> <br>Copyright &copy; <span id="copyRight"></span>
         </div>
 
         <div class="col-12 col-md-4 mt-4 mt-md-0 text-center text-md-right">
@@ -671,6 +703,9 @@
   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
   <script>
+    var today = new Date().getFullYear();
+    document.getElementById('copyRight').innerHTML = today;
+
     AOS.init();
     AOS.refresh();
     var swiper = new Swiper('.swiper-container', {
