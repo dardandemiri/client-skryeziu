@@ -53,6 +53,10 @@ body {
   font-weight: 400;
 }
 
+h2 {
+  text-transform: capitalize !important;
+}
+
 .styling h2 {
   font-size: 2rem;
   margin-bottom: .5em;
@@ -130,11 +134,13 @@ header h4:hover {
   color: #528bff;
 }
 
-header .navbar-nav a.nav-link {
+header .nav-tabs a.nav-link {
   color: #777;
+  font-size: 0.75rem;
+  padding: 10px 10px;
 }
 
-header .navbar-nav a.nav-link:hover {
+header .nav-tabs a.nav-link:hover {
   color: #528bff;
 }
 

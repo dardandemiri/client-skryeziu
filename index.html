@@ -49,22 +49,22 @@
 
           <ul class="nav nav-tabs ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#sherbimet">Shërbimet</a>
+              <a class="nav-link" href="#sherbimet">SHËRBIMET</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#aktivitete">Aktivitete</a>
+              <a class="nav-link" href="#aktivitete">AKTIVITETE</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Ligjëruesi">Ligjëruesi</a>
+              <a class="nav-link" href="#Ligjëruesi">LIGJËRUES</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#rekomandimet">Rekomandimet</a>
+              <a class="nav-link" href="#rekomandimet">REKOMANDIMET</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#qmimet">Qmimet</a>
+              <a class="nav-link" href="#qmimet">QMIMET</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Kontaktoni</a>
+              <a class="nav-link" href="#contact">KONTAKT</a>
             </li>
 
           </ul>
@@ -101,11 +101,11 @@
   </section>
 
   <!-- Feauters  -->
-  <section class="styling features">
+  <section id="sherbimet" class="styling features">
     <div class="container">
       <div class="row justify-content-center">
         <div data-aos="fade-down" data-aos-duration="850" class="col-12 text-center">
-          <h2 id="sherbimet">Shërbimet</h2>
+          <h2>Shërbimet</h2>
         </div>
       </div>
 
@@ -140,11 +140,11 @@
   </section>
 
   <!-- certifikata -->
-  <section class="styling">
+  <section id="aktivitete" class="styling">
     <div class="container " data-aos="slide-right" data-aos-duration="850">
       <div class="row text-center  justify-content-center">
         <div class="col-md-10 col-lg-7">
-          <h2 id="aktivitete"></h2>
+          <h2></h2>
         </div>
       </div>
 
@@ -231,12 +231,12 @@
   </section>
 
 
-  <section class="styling " style="background-image: url(img/bg_0.svg); color: white;">
+  <section id="Ligjëruesi" class="styling " style="background-image: url(img/bg_0.svg); color: white;">
 
     <div class="container">
       <div class="row justify-content-center">
         <div data-aos="fade-down" data-aos-duration="850" class="col-12 text-center pb-5">
-          <h2 id="Ligjëruesi">Ligjërues</h2>
+          <h2>Ligjërues</h2>
         </div>
       </div>
       <div class="row text-lg-right align-items-center">
@@ -285,11 +285,11 @@
 
 
   <!-- Testimonials -->
-  <section class="styling">
+  <section id="rekomandimet" class="styling">
     <div class="container">
       <div class="row text-center justify-content-center">
         <div data-aos="fade-down" data-aos-duration="850" class="col-md-10 col-lg-7">
-          <h2 id="rekomandimet">Rekomandimet</h2>
+          <h2>Rekomandimet</h2>
         </div>
       </div>
 
@@ -477,11 +477,11 @@
 
 
   <!-- Pricing Area  -->
-  <section class="styling bg-dark" style="background-image: url(img/bg_1.svg);">
+  <section id="qmimet" class="styling bg-dark" style="background-image: url(img/bg_1.svg);">
     <div class="container">
       <div data-aos="fade-down" data-aos-duration="850" class="row text-center">
         <div class="col">
-          <h2 id="qmimet">Qmimet</h2>
+          <h2>Qmimet</h2>
         </div>
       </div>
 
@@ -575,12 +575,12 @@
 
 
   <!-- Contact Us area -->
-  <section class="styling pb-0">
+  <section id="contact" class="styling pb-0">
 
     <div class="container">
       <div class="row text-center justify-content-center">
         <div data-aos="fade-down" data-aos-duration="850" class="col-md-10 col-lg-7">
-          <h2 id="contact">Kontaktoni</h2>
+          <h2>Kontaktoni</h2>
         </div>
       </div>
       <div class="row mt-5 ">
@@ -655,7 +655,7 @@
             </div>
             <div class="row mt-4">
               <div class="col">
-                <button type="submit" class="btn">Dërgo</button>
+                <button type="submit" class="btn">DËRGO</button>
               </div>
             </div>
           </form>
@@ -714,29 +714,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/js/swiper.min.js"></script>
   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
-  <script>
-    var today = new Date().getFullYear();
-    document.getElementById('copyRight').innerHTML = today;
+  <script src="js/script.js"></script>
 
-    AOS.init();
-    AOS.refresh();
-    var swiper = new Swiper('.swiper-container', {
-      spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  </script>
 </body>
 
 </html>
